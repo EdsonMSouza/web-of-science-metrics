@@ -9,6 +9,7 @@ WoS Extractor minimizes the time spent in the academic research process for the 
 pip install -r requirements.txt
 ```
 ## How Download Chrome Driver
+This version is based in Windows 10 system. To others systems, access the link below.  
 Chrome Driver: [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
 
 ## How to run
