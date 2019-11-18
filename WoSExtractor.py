@@ -213,13 +213,11 @@ class WoSExtractor:
             self.elem.send_keys(search_term)
             self.driver.find_element_by_name("searchButton").click()
 
-            # total de artigos encontrados
+            # Total articles found
             self.total_paginas = self.driver.find_element_by_class_name("historyResults").text
 
             # Call results from history
             self.driver.find_element_by_class_name("historyResults").click()
-
-
             self.url = self.driver.current_url[:-1]
             self.url_base = self.url[:8] + self.url[8:].split('/')[0]
             self.article = {}
@@ -236,7 +234,6 @@ class WoSExtractor:
 
         try:
             for t_links in range(int(self.total_paginas.replace(",",""))):
-                    #print(self.url_base + self.reference + str(t_links + 1))
                     self.article['link'].append(self.url_base + self.reference + str(t_links + 1))
 
             # Save tmp data to file
@@ -278,7 +275,7 @@ class WoSExtractor:
                     col = []
                     self.driver.get(link)
 
-                    # seleciona o idioma inglês
+                    # Select english language
                     self.driver.find_element_by_xpath('//html/body/div[1]/div[22]/ul[2]/li[3]').click()
                     self.driver.find_element_by_xpath('//html/body/div[1]/div[22]/ul[2]/li[3]/ul/li[3]/a').click()
 
