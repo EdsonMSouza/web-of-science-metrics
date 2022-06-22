@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[ ]:
-
-
 class WoSExtractor:
-
 
     def __init__(self, pathChromedriver):
 
