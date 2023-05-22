@@ -6,4 +6,4 @@ selenium==3.141.0
 beautifulsoup4==4.8.0
 numpy==1.22.0
 openpyxl==2.6.2
-requests==2.22.0
+requests==2.31.0
